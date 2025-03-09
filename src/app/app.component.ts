@@ -1,13 +1,20 @@
+import { TuiRoot } from "@taiga-ui/core";
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, TuiRoot],
   template: `
-    <h1>Welcome to {{title}}!</h1>
+    <tui-root>
+      <h1>Welcome to {{title}}!</h1>
 
-    <router-outlet />
+      <h1 class="text-3xl text-re font-bold underline">
+        Hello world!
+      </h1>
+
+      <router-outlet />
+    </tui-root>
   `,
   styles: [],
 })
