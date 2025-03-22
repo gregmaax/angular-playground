@@ -4,7 +4,7 @@ import {provideRouter} from '@angular/router';
 import {routes} from './app.routes';
 import {provideAnimationsAsync} from '@angular/platform-browser/animations/async';
 import {providePrimeNG} from 'primeng/config';
-import {PurplePreset} from './shared/purple-preset';
+import {PurplePreset} from './shared/utils/purple-preset';
 
 export const appConfig: ApplicationConfig = {
   providers: [
